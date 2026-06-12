@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Profil dan Form</title>
+
+    <link rel="stylesheet" href="rakhaa.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Website Profil Saya</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#achievement">Prestasi</a>
+        <a href="#project">Project</a>
+        <a href="#form">Form</a>
+    </nav>
+
+    <section id="profil" class="profil">
+
+        <h2>Profil Saya</h2>
+
+        <img src="rakha.jpeg" alt="Foto Profil">
+
+        <p><b>Nama:</b> Rakha Syakir W</p>
+        <p><b>Kelas:</b> X PPLG 1</p>
+        <p><b>Sekolah:</b> SMK Negeri 1 Purbalingga</p>
+        <p><b>Hobi:</b> Bermain Bola Voli</p>
+        <p><b>Cita-cita:</b> Menjadi Investor</p>
+
+        <section class="about" id="about">
+            <p>
+                Halo, saya adalah siswa dari SMK Negeri 1 Purbalingga
+                yang saat ini berada di jurusan PPLG
+                (Pengembangan Perangkat Lunak dan Gim).
+                Saya senang belajar tentang komputer,
+                pemrograman, dan teknologi.
+                Saya memiliki hobi bermain bola voli
+                karena saya suka berolahraga,
+                bekerja sama dengan tim,
+                dan menjaga kesehatan tubuh.
+                Selain itu, bermain bola voli juga menjadi
+                kegiatan yang menyenangkan di waktu luang.
+                Saya bercita-cita menjadi seorang investor
+                yang sukses di bidang bisnis dan teknologi.
+            </p>
+        </section>
+
+    </section>
+
+    <section class="achievement" id="achievement">
+
+        <h3>Pengalaman dan Prestasi</h3>
+
+        <div class="card-pengalaman">
+            <h4>🏐 Event Bola Voli</h4>
+            <p>Mengikuti berbagai event dan pertandingan bola voli di Purbalingga.</p>
+        </div>
+
+        <div class="card-pengalaman">
+            <h4>🥉 POPDA Bola Voli</h4>
+            <p>Mengikuti POPDA Bola Voli Kabupaten Purbalingga dan meraih Juara 3.</p>
+        </div>
+
+    </section>
+
+    <section class="project" id="project">
+
+        <div class="card-pengalaman">
+            <h4>Website Portofolio Pribadi</h4>
+            <p>Membuat website portofolio menggunakan HTML, CSS, dan JavaScript.</p>
+        </div>
+
+    </section>
+
+    <section id="form">
+
+        <h2>Form Data Diri</h2>
+
+        <form id="bioForm">
+
+            <table>
+
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td><input type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" required></td>
+                </tr>
+
+                <tr>
+                    <td>Nomor HP</td>
+                    <td><input type="tel" required></td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" required></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" required></td>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk"> Laki-laki
+                        <input type="radio" name="jk"> Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Agama</td>
+                    <td>
+                        <select>
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Katolik</option>
+                            <option>Hindu</option>
+                            <option>Buddha</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <input type="checkbox"> Membaca
+                        <input type="checkbox"> Olahraga
+                        <input type="checkbox"> Gaming
+                    </td>
+                </tr>
+
+            </table>
+
+            <button type="submit">Kirim Data</button>
+
+        </form>
+
+    </section>
+
+    <section id="hasilData" style="display: none;">
+
+        <h2>Data Yang Dikirim</h2>
+
+        <div id="output"></div>
+
+    </section>
+
+    <script src="rakhaa.js"></script>
+
+</body>
+</html>
